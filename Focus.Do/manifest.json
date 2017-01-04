@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+
+	"name": "Focus.Do",
+	"description": "This extension will hide all non relavent content on YouTube and allow you to focus only on the video",
+	"version": "1.0",
+
+	"content_scripts": [{
+		"matches": ["https://*/*", "http://*/*"],
+		"js": ["myscript.js"]
+	}],
+	"permissions": [
+		"activeTab"
+	]
+}
